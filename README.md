@@ -15,6 +15,10 @@
     <br />
     <br />
     <a href="https://sonozaki7.github.io/portfolio">About Me</a>
+    ·
+    <a href="https://github.com/sonozaki7/portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/sonozaki7/portfolio/issues">Request Feature</a>
   </p>
 </p>
 
