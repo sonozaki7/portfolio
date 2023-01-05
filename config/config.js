@@ -106,7 +106,7 @@ export const projects = {
 			icons: [
 				{
 					icon: faGithub,
-					link: "https://github.com/hashirshoaeb/portfolio",
+					link: "https://github.com/sonozaki7/portfolio",
 				},
 			]
 		},
@@ -115,16 +115,16 @@ export const projects = {
 
 export const contact = {
 	title: "Get in touch",
-	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at sou.nozaki@gmail.com.",
 	buttons: [
 		{
 			title: "Email Me",
-			link: "mailto:hashirshoaeb@gmail.com",
+			link: "mailto:sou.nozaki@gmail.com",
 			isPrimary: true,
 		},
 		{
 			title: "Schedule Meeting",
-			link: "",
+			link: "https://calendly.com/sou-nozaki/15min",
 			isPrimary: false,
 		},
 	]
@@ -145,7 +145,7 @@ export const links = {
 	cards: [
 		{
 			title: "My website",
-			link: "https://hashirshoaeb.com/",
+			link: "https://sonozaki7.github.io/portfolio/",
 		},
 		{
 			title: "My GitHub",
