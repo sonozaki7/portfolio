@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-[![Product Name Screen Shot](https://api.apify.com/v2/key-value-stores/nr2BMtV06USRdYb8I/records/sonozaki7.github.io-scroll_original)](https://example.com)
+[![Product Name Screen Shot](https://api.apify.com/v2/key-value-stores/TbuucvYb4FyD8tZeD/records/sonozaki7.github.io-scroll_original)](https://example.com)
 
 There are many portfolio website templates available on Github, however, I didn't find one that really suit my needs so I created this one. A simple, easy to configure, lightweight, and responsive static portfolio website.
 
