@@ -1,8 +1,24 @@
 
-const profile = { src: '/images/profile.jpg' };
+import getConfig from 'next/config';
 import { faAppStore, faGithub, faGooglePlay, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 //import cv_link from './2025_MyCV.pdf'
+
+// Utility function to create asset paths that work both locally and on GitHub Pages
+const getAssetPath = (path) => {
+	if (typeof window !== 'undefined') {
+		// Client-side: use runtime config
+		const { publicRuntimeConfig } = getConfig() || {};
+		const basePath = publicRuntimeConfig?.basePath || '';
+		return `${basePath}${path}`;
+	} else {
+		// Server-side: use environment variable
+		const basePath = process.env.NODE_ENV === 'production' && process.env.BASE_PATH ? process.env.BASE_PATH : '';
+		return `${basePath}${path}`;
+	}
+};
+
+const profile = { src: getAssetPath('/images/profile.jpg') };
 
 export const navigation = {
 	name: "So",
@@ -53,7 +69,7 @@ export const intro = {
 		},
 		{
 			title: "Resume",
-			link: "/2025_MyCV.pdf",
+			link: getAssetPath("/2025_MyCV.pdf"),
 			isPrimary: false,
 		},
 		{
@@ -125,7 +141,7 @@ export const experience = {
 			period: "Mar 2020 - Jan 2021",
 			location: "San Francisco, CA",
 			description: "Tested and evaluated newly integrated games on BlueStack emulation platform. Identified critical bugs resulting in 30% increase in post-launch stability and 25% improvement in overall platform reliability.",
-			logo: "/images/BSicon.png",
+			logo: getAssetPath("/images/BSicon.png"),
 		},
 	],
 }

@@ -1,6 +1,21 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link'
+import Link from 'next/link';
+import getConfig from 'next/config';
+
+// Utility function to create asset paths that work both locally and on GitHub Pages
+const getAssetPath = (path) => {
+	if (typeof window !== 'undefined') {
+		// Client-side: use runtime config
+		const { publicRuntimeConfig } = getConfig() || {};
+		const basePath = publicRuntimeConfig?.basePath || '';
+		return `${basePath}${path}`;
+	} else {
+		// Server-side: use environment variable
+		const basePath = process.env.NODE_ENV === 'production' && process.env.BASE_PATH ? process.env.BASE_PATH : '';
+		return `${basePath}${path}`;
+	}
+};
 
 export const Skills = ({ title, cards }) => {
 	return (
@@ -70,7 +85,7 @@ export const University = ({ title, cards }) => {
 		<div id="university" className="bg-primary py-5 px-5">
 			<div className="container">
 				<div className="d-flex justify-content-center mb-4">
-					<img src="/images/ubc-logo-2021-ece-as-promo-white-rgb300.png" alt="UBC Logo" style={{ width: "600px", height: "auto", maxWidth: "100%" }} />
+					<img src={getAssetPath("/images/ubc-logo-2021-ece-as-promo-white-rgb300.png")} alt="UBC Logo" style={{ width: "600px", height: "auto", maxWidth: "100%" }} />
 				</div>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
