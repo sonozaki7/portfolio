@@ -70,7 +70,7 @@ export const University = ({ title, cards }) => {
 		<div id="university" className="bg-primary py-5 px-5">
 			<div className="container">
 				<div className="d-flex justify-content-center mb-4">
-					<img src="/images/ubc-logo-2021-ece-as-narrow-white-rgb300.png" alt="UBC Logo" style={{ width: "300px", height: "auto", maxWidth: "100%" }} />
+					<img src="/images/ubc-logo-2021-ece-as-promo-white-rgb300.png" alt="UBC Logo" style={{ width: "600px", height: "auto", maxWidth: "100%" }} />
 				</div>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
