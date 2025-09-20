@@ -16,10 +16,11 @@
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
-    "predeploy": "npm run build && npm run export && touch ./out/.nojekyll",
-    "deploy": "npm run custom-domain && node scripts/pages.js hashirshoaeb master",
+    "build:static": "npm run prebuild && npm run build && npm run export && touch ./out/.nojekyll",
+    "deploy:manual": "npm run build:static && npm run custom-domain && node scripts/pages.js hashirshoaeb master",
     "custom-domain": "node scripts/cname.js hashirshoaeb.com www.hashirshoaeb.com",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",

@@ -1,0 +1,23 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "sonozaki7"
+    assignees:
+      - "sonozaki7"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      # Group minor and patch updates together
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"

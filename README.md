@@ -22,11 +22,11 @@
   </p>
 </p>
 
-[![GitHub forks](https://img.shields.io/github/forks/hashirshoaeb/portfolio?style=for-the-badge)](https://github.com/hashirshoaeb/portfolio/network)
-[![GitHub license](https://img.shields.io/github/license/hashirshoaeb/portfolio?style=for-the-badge)](https://github.com/hashirshoaeb/portfolio/blob/master/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
-[![Node Version](https://img.shields.io/static/v1?label=Node&message=16.16.0&color=026e00&style=for-the-badge)](https://nodejs.org)
-[![npm Version](https://img.shields.io/static/v1?label=npm&message=8.11.0&color=cb0000&style=for-the-badge)](https://nodejs.org)
+[![GitHub forks](https://img.shields.io/github/forks/sonozaki7/portfolio?style=for-the-badge)](https://github.com/sonozaki7/portfolio/network)
+[![GitHub license](https://img.shields.io/github/license/sonozaki7/portfolio?style=for-the-badge)](https://github.com/sonozaki7/portfolio/blob/main/LICENSE)
+[![Deploy Status](https://github.com/sonozaki7/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/sonozaki7/portfolio/actions/workflows/deploy.yml)
+[![Node Version](https://img.shields.io/static/v1?label=Node&message=18.x&color=026e00&style=for-the-badge)](https://nodejs.org)
+[![npm Version](https://img.shields.io/static/v1?label=npm&message=latest&color=cb0000&style=for-the-badge)](https://nodejs.org)
 
 
 <!-- TABLE OF CONTENTS -->
@@ -104,26 +104,40 @@ You should have [Nodejs](https://nodejs.org/en/) and [Git](https://git-scm.com/d
 
 2. Open the browser to http://localhost:3000/
 
-## Deployment
+## 🚀 Deployment
 
-If it works locally, you can deploy your project to GitHub Pages. GitHub Pages provides two types of free domains, `<username>.github.io` and `<username>.github.io/<repository>`. You can choose the one that suits your needs. You can learn more about domain types from [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites).
+This project uses **automated GitHub Actions** for deployment to GitHub Pages. The deployment process is fully automated and optimized for performance.
 
-### Deploy to \<your-username>.github.io/portfolio
+### ✅ Automated Deployment (Recommended)
 
-Simply you just need to commit and push your changes to github. And [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#overview) will take care of the deployment. Your site will be available at `https://<your-username>.github.io/portfolio`
+The portfolio is automatically deployed using GitHub Actions whenever you push changes to the `main` branch.
 
-### Deploy to \<your-username>.github.io
+**Features:**
+- ✅ **Automatic deployment** on every push to main
+- ✅ **Pull request previews** for testing changes
+- ✅ **Optimized caching** for faster builds
+- ✅ **Custom domain support** via repository secrets
+- ✅ **Deployment status badges** and notifications
 
-Create a new repository with your username as `<your-username>.github.io`. And let the following command do the job for you.
+**Setup:**
+1. Go to your repository **Settings** → **Pages**
+2. Set source to **"GitHub Actions"**
+3. (Optional) Add a `CUSTOM_DOMAIN` repository secret for custom domains
+4. Push changes to `main` branch - deployment happens automatically!
+
+Your site will be available at `https://<your-username>.github.io/portfolio`
+
+### 🔧 Manual Deployment (Fallback)
+
+If you need to deploy manually, you can still use the legacy method:
 
 ```sh
-  npm run predeploy
-  node scripts/pages.js <your-username> master
+npm run deploy:manual
 ```
 
-Your site will be available at `https://<your-username>.github.io`
+### 📊 Deployment Status
 
->Note: You need to replace `<your-username>` with your username. To add CNAME for custom domain, see [scripts/cname.js](https://github.com/hashirshoaeb/portfolio/blob/main/scripts/cname.js)
+Check the deployment status in the [Actions tab](https://github.com/sonozaki7/portfolio/actions) or view the status badge in the README above.
 
 
 
