@@ -69,7 +69,7 @@ export const intro = {
 		},
 		{
 			title: "Resume",
-			link: getAssetPath("/2025_MyCV.pdf"),
+			link: "https://drive.google.com/file/d/14y48SVJB-UnhxvJp0BRffqc0nbpujoGP/view?usp=sharing",
 			isPrimary: false,
 		},
 		{
@@ -83,10 +83,8 @@ export const intro = {
 export const about = {
 	title: "About Me",
 	description: [
-		"I'm a tech entrepreneur who believes in using artificial intelligence to solve real-world problems. Born in Japan, educated in Canada, and currently building across Asia - I thrive in the intersection of cultures and innovation.",
-		"My journey spans from competitive programming victories to AI consulting for major banks, but what drives me most is creating technology that makes a meaningful difference. Whether it's building safety apps for students or teaching English to children in orphanages, I'm passionate about tech for social good.",
-		"I'm currently living between Japan and Thailand, working on cutting-edge AI projects while maintaining my philosophy of 'building in public' - sharing knowledge, failures, and successes to help others in the tech community grow.",
-		"When I'm not coding or consulting, you'll find me exploring new cultures, mentoring aspiring developers, or documenting my entrepreneurial journey. I believe the best solutions come from diverse perspectives and genuine human connection.",
+		"From competitive programming victories to $14,000 AI consulting contracts with major European banks, I've built technology that directly impacts thousands - from campus safety apps protecting students to AI systems enhancing financial security across continents.",
+		"My mission is to create products that fundamentally improve quality of life worldwide, leveraging AI and cross-cultural innovation to solve problems that matter most to humanity's future.",
 	],
 }
 
