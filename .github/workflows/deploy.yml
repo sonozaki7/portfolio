@@ -17,12 +17,6 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
-    # Add these permissions
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     # Add this environment configuration
     environment:
