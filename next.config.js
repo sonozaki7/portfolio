@@ -27,11 +27,10 @@ console.warn(
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
   basePath: basePath,
   assetPrefix: basePath,
-  publicRuntimeConfig: {
-    basePath: basePath,
-  },
 }
 
 module.exports = nextConfig

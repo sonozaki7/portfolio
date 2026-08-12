@@ -2,7 +2,7 @@
   "name": "portfolio",
   "description": "A portfolio website of So Nozaki",
   "homepage": "https://sonozaki7.github.io/portfolio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,32 +11,21 @@
     "url": "https://github.com/sonozaki7"
   },
   "scripts": {
-    "prebuild": "node scripts/favicons.js",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "export": "next export",
-    "build:static": "npm run prebuild && npm run build && npm run export && touch ./out/.nojekyll",
-    "deploy:manual": "npm run build:static && npm run custom-domain && node scripts/pages.js hashirshoaeb master",
-    "custom-domain": "node scripts/cname.js hashirshoaeb.com www.hashirshoaeb.com",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "build:static": "npm run build && touch ./out/.nojekyll",
+    "lint": "eslint pages components config",
+    "lint:fix": "eslint pages components config --fix"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "bootstrap": "^5.2.1",
-    "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0",
-    "favicons": "^6.2.2",
-    "gh-pages": "^4.0.0",
-    "sass": "^1.54.9"
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.0",
+    "sass": "1.102.0"
   }
 }
