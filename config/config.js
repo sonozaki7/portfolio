@@ -32,14 +32,6 @@ export const intro = {
 export const products = [
   {
     index: '01',
-    name: 'private-product',
-    state: 'live',
-    href: 'https://private.example',
-    description: 'A reviewed participation platform for natural lifestyle content, clear onboarding, and monthly opportunities.',
-    tags: ['workflow design', 'trust', 'multilingual'],
-  },
-  {
-    index: '02',
     name: 'Nightforge',
     state: 'open source',
     href: 'https://github.com/sonozaki7/Nightforge',
@@ -47,7 +39,7 @@ export const products = [
     tags: ['agents', 'orchestration', 'delivery'],
   },
   {
-    index: '03',
+    index: '02',
     name: 'Call Jennie',
     state: 'live',
     href: 'https://call.jennielove.com',
@@ -55,7 +47,7 @@ export const products = [
     tags: ['realtime', 'voice', 'translation'],
   },
   {
-    index: '04',
+    index: '03',
     name: 'Qolso',
     state: 'live',
     href: 'https://qolso.com',

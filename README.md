@@ -13,6 +13,8 @@ Live site: [sonozaki7.github.io/portfolio](https://sonozaki7.github.io/portfolio
 
 The portfolio intentionally avoids private repository names, customer data, operational credentials, and unverified business claims.
 
+Only products explicitly approved for public attribution belong in this repository. Internal products, private repository identities, private domains, infrastructure relationships, and client names must stay out of source, fixtures, metadata, screenshots, generated files, and deployed pages.
+
 ## Local development
 
 ```bash
