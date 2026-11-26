@@ -111,12 +111,11 @@ export const contact = {
   title: 'Build something useful.',
   description: 'I am open to product conversations, technical collaboration, and focused consulting where AI can remove a real operational bottleneck.',
   links: [
-    { title: 'Email', link: 'mailto:sou.nozaki@gmail.com' },
+    { title: 'Email', link: 'mailto:so@qolso.com' },
     { title: 'Schedule', link: 'https://calendly.com/sonozaki/30m' },
     { title: 'GitHub', link: 'https://github.com/sonozaki7' },
-    { title: 'X', link: 'https://x.com/ghtght_' },
+    { title: 'X', link: 'https://x.com/ghtght_7' },
     { title: 'LinkedIn', link: 'https://www.linkedin.com/in/sonozaki/' },
-    { title: 'Résumé', link: 'https://drive.google.com/file/d/14y48SVJB-UnhxvJp0BRffqc0nbpujoGP/view?usp=sharing' },
   ],
 };
 
